@@ -13,6 +13,16 @@ can only load the collection they need without 100 of related collections.
 [![Pharo version](https://img.shields.io/badge/Pharo-8.0-%23aac9ff.svg)](https://pharo.org/download)
 <!-- [![Build status](https://ci.appveyor.com/api/projects/status/1wdnjvmlxfbml8qo?svg=true)](https://ci.appveyor.com/project/olekscode/dataframe)  -->
 
+## Example
+```
+	| aTrie |
+	aTrie := CTTrie new.
+	aTrie add: 'bon' value: 3.
+	self assert: (aTrie contains: 'bon').
+	self assert: (aTrie find: 'bon') notNil.
+	self assert: (aTrie find: 'bon') nodeValue = 3
+```
+
 
 
 ## Loading
