@@ -15,12 +15,12 @@ can only load the collection they need without 100 of related collections.
 
 ## Example
 ```
-	| aTrie |
-	aTrie := CTTrie new.
-	aTrie add: 'bon' value: 3.
-	self assert: (aTrie contains: 'bon').
-	self assert: (aTrie find: 'bon') notNil.
-	self assert: (aTrie find: 'bon') nodeValue = 3
+| aTrie |
+aTrie := CTTrie new.
+aTrie add: 'bon' value: 3.
+self assert: (aTrie contains: 'bon').
+self assert: (aTrie find: 'bon') notNil.
+self assert: (aTrie find: 'bon') nodeValue = 3
 ```
 
 
